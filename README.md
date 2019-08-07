@@ -33,12 +33,12 @@ This code can either be run as command line or refered to as a library
 	#download projects
 	python3 WikimediaDumpsBuilder.py -p wikidata
 	python3 WikimediaDumpsBuilder.py -p wiktionary -l fr
-...
+	...
 
 	#delete projects
 	python3 WikimediaDumpsBuilder.py -r -p wikidata -d
 	python3 WikimediaDumpsBuilder.py -p wiktionary -l fr -d
-...
+	...
 
 
 2) as a library
