@@ -16,7 +16,7 @@ This code can either be run as command line or refered to as a library
 
 1) Command line usage is :
 
-	 -r <...> specify root folder to store dumps (compulsory parameter when allready has been specified : gets stored in the .config)
+	\-r <...> specify root folder to store dumps (compulsory parameter when allready has been specified : gets stored in the .config)
 	 -p <...> wikimedia projet to download
 	 -l <...> language
 	 -d delete mode (alternative mode : delete dump and path specific to it)
