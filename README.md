@@ -16,45 +16,45 @@ This code can either be run as command line or refered to as a library
 
 1) Command line usage is :
 
-* -r <...> specify root folder to store dumps (compulsory parameter when allready has been specified : gets stored in the .config)
-* -p <...> wikimedia projet to download
-* -l <...> language
-* -d delete mode (alternative mode : delete dump and path specific to it)
-* -u update-index (updates the html index pointing to dumps, use this argument alone when you want to refresh the indexes to dumps available to download)
+	* -r <...> specify root folder to store dumps (compulsory parameter when allready has been specified : gets stored in the .config)
+	* -p <...> wikimedia projet to download
+	* -l <...> language
+	* -d delete mode (alternative mode : delete dump and path specific to it)
+	* -u update-index (updates the html index pointing to dumps, use this argument alone when you want to refresh the indexes to dumps available to download)
 
-	*usage*:
+*usage*:
 
-#create a source folder for the project
-python3 WikimediaDumpsBuilder.py -r ~/Documents/
+	#create a source folder for the project
+	python3 WikimediaDumpsBuilder.py -r ~/Documents/
 
-#update indexes
-python3 WikimediaDumpsBuilder.py -u
+	#update indexes
+	python3 WikimediaDumpsBuilder.py -u
 
-#download projects
-python3 WikimediaDumpsBuilder.py -p wikidata
-python3 WikimediaDumpsBuilder.py -p wiktionary -l fr
+	#download projects
+	python3 WikimediaDumpsBuilder.py -p wikidata
+	python3 WikimediaDumpsBuilder.py -p wiktionary -l fr
 ...
 
-#delete projects
-python3 WikimediaDumpsBuilder.py -r -p wikidata -d
-python3 WikimediaDumpsBuilder.py -p wiktionary -l fr -d
+	#delete projects
+	python3 WikimediaDumpsBuilder.py -r -p wikidata -d
+	python3 WikimediaDumpsBuilder.py -p wiktionary -l fr -d
 ...
 
 
 2) as a library
 
-import WikimediaDumpsBuilder
+	import WikimediaDumpsBuilder
 
-#create a source folder for the project
-wb = WikimediaDumpsBuilder(<path_root_project>)
+	#create a source folder for the project
+	wb = WikimediaDumpsBuilder(<path_root_project>)
 
-#update indexes
-wb.update_index()
+	#update indexes
+	wb.update_index()
 
-#download projects
-wb.download_dump("wikidata") #download wikidata into it
-wb.download_dump("wikipedia", "fr") #download wikipedia into it
+	#download projects
+	wb.download_dump("wikidata") #download wikidata into it
+	wb.download_dump("wikipedia", "fr") #download wikipedia into it
 
-#delete projects
-wb.delete_dump("wikidata")
-wb.delete_dump("wikipedia", "fr") 
+	#delete projects
+	wb.delete_dump("wikidata")
+	wb.delete_dump("wikipedia", "fr") 
