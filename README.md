@@ -41,7 +41,7 @@ This code can either be run as command line or refered to as a library
 	...
 
 
-2) as a library
+2) as a library:
 
 *usage*:
 
