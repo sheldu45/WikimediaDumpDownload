@@ -7,7 +7,7 @@ import subprocess
 #This class is meant to be a library or executed through bash with valid parameters.
 #Because of the structure of wikimedia's projects, wikidata is internally handeled separatly than other projects.
 #When implemented, historical queries will only allow to sum-up downloads for past n days version and never to target only specificaly one. We will consider wikimedia project as oriented to present.
-class WikimediaDumpDownload():
+class WikimediaDumpDownloader():
 
     #Crée un dossier au niveau de path_root_project si celui-ci n'existe pas déjà
     def __init__(self, path_root_project):
@@ -325,7 +325,7 @@ if __name__ == '__main__':
     if path_root_project == "None":
         raise ValueError("Please specify a path to command line arguments (-r)")
 
-    wikimedia_dumps = WikimediaDumpDownload(path_root_project)
+    wikimedia_dumps = WikimediaDumpDownloader(path_root_project)
     config_file = open("config", "w")
     config_file.write(path_root_project)
     config_file.close()
