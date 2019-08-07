@@ -14,13 +14,13 @@ on top of those 4 projects is a hidden folder : .temp which is created in that r
 
 This code can either be run as command line or refered to as a library
 
-1) Command line usage is :
+1) Command line parameters are :
 
-	\-r <...> specify root folder to store dumps (compulsory parameter when allready has been specified : gets stored in the .config)
-	 -p <...> wikimedia projet to download
-	 -l <...> language
-	 -d delete mode (alternative mode : delete dump and path specific to it)
-	 -u update-index (updates the html index pointing to dumps, use this argument alone when you want to refresh the indexes to dumps available to download)
+	* r <...> specify root folder to store dumps (compulsory parameter when allready has been specified : gets stored in the .config)
+	* p <...> wikimedia projet to download
+	* l <...> language
+	* d delete mode (alternative mode : delete dump and path specific to it)
+	* u update-index (updates the html index pointing to dumps, use this argument alone when you want to refresh the indexes to dumps available to download)
 
 *usage*:
 
