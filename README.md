@@ -1,4 +1,4 @@
-# WikimediaDumpDownload
+# WikimediaDumpDownloader
 
 This code offers the possibility to download dumps for Wikidata, Wikipedia, Wiktionary and Wikisource by language (in the futur, it could also download a timestamp of those projets).
 
