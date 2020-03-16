@@ -25,7 +25,7 @@ This code can either be run as command line or refered to as a library
 *usage*:
 
 	#create a source folder for the project
-	python3 WikimediaDumpBuilder.py -r ~/Documents/
+	python3 WikimediaDumpDownloader.py -r ~/Documents/
 
 	#update indexes
 	python3 WikimediaDumpDownloader.py -u
