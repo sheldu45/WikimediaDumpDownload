@@ -28,16 +28,16 @@ This code can either be run as command line or refered to as a library
 	python3 WikimediaDumpBuilder.py -r ~/Documents/
 
 	#update indexes
-	python3 WikimediaDumpDownloader.py.py -u
+	python3 WikimediaDumpDownloader.py -u
 
 	#download projects
-	python3 WikimediaDumpDownloader.py.py -p wikidata
-	python3 WikimediaDumpDownloader.py.py -p wiktionary -l fr
+	python3 WikimediaDumpDownloader.py -p wikidata
+	python3 WikimediaDumpDownloader.py -p wiktionary -l fr
 	...
 
 	#delete projects
-	python3 WikimediaDumpDownloader.py.py -r -p wikidata -d
-	python3 WikimediaDumpDownloader.py.py -p wiktionary -l fr -d
+	python3 WikimediaDumpDownloader.py -r -p wikidata -d
+	python3 WikimediaDumpDownloader.py -p wiktionary -l fr -d
 	...
 
 
