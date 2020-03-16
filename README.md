@@ -28,16 +28,16 @@ This code can either be run as command line or refered to as a library
 	python3 WikimediaDumpBuilder.py -r ~/Documents/
 
 	#update indexes
-	python3 WikimediaDumpBuilder.py -u
+	python3 WikimediaDumpDownloader.py.py -u
 
 	#download projects
-	python3 WikimediaDumpBuilder.py -p wikidata
-	python3 WikimediaDumpBuilder.py -p wiktionary -l fr
+	python3 WikimediaDumpDownloader.py.py -p wikidata
+	python3 WikimediaDumpDownloader.py.py -p wiktionary -l fr
 	...
 
 	#delete projects
-	python3 WikimediaDumpBuilder.py -r -p wikidata -d
-	python3 WikimediaDumpBuilder.py -p wiktionary -l fr -d
+	python3 WikimediaDumpDownloader.py.py -r -p wikidata -d
+	python3 WikimediaDumpDownloader.py.py -p wiktionary -l fr -d
 	...
 
 
@@ -45,10 +45,10 @@ This code can either be run as command line or refered to as a library
 
 *usage*:
 
-	import WikimediaDumpsBuilder
+	import WikimediaDumpDownloader
 
 	#create a source folder for the project
-	wb = WikimediaDumpBuilder(<path_root_project>)
+	wb = WikimediaDumpDownloader(<path_root_project>)
 
 	#update indexes
 	wb.update_index()
